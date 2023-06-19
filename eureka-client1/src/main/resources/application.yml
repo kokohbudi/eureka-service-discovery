@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: first-service
+eureka:
+  instance:
+  lease-renewal-interval-in-seconds: 1
+  lease-expiration-duration-in-seconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka
+    instance:
+    preferIpAddress: false
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 8989
